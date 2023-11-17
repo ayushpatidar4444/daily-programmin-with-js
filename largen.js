@@ -1,16 +1,15 @@
-let num1 = 56;
-let num2 = 90;
-let num3 = 115;
-let largestNum;
 
-if (num1 > num2 && num1 > num3) {
-  largestNum = num1;
-} 
-else if (num2 > num1 && num2 > num3) {
-  largestNum = num2;
-} 
-else {
-  largestNum = num3;
-}
 
-console.log(largestNum);
+let Promis = new Promise(function(myResolve, myReject) {
+    let i= 10+20;
+  
+  
+    if (i == 30) {
+      myResolve("good morning");
+    } else {
+      myReject("Error");
+    }
+  });
+  
+  console.log(Promis) 
+  
